@@ -13,7 +13,7 @@ import com.steamApi.Main.UserSession;
 public class SessionManager{
 
 
-    private final static Path SESSION_FILEPATH = Path.of("/home/harshvardhan/.config/SteamViewer/" , "session.json");
+    private final static Path SESSION_FILEPATH = Path.of( "/home/"+System.getProperty("user.name")+"/.config/SteamViewer/" , "session.json");
     
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
